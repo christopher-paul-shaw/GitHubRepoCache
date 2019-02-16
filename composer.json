@@ -1,6 +1,6 @@
 {
-    "name": "christopher-paul-shaw/article",
-    "description": "FileBased Article Management",
+    "name": "christopher-paul-shaw/githubrepocache",
+    "description": "Retrieving and caching of a users publig github repositories",
     "minimum-stability": "dev",
     "require": {
         "php": "^7.1",
