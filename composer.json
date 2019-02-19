@@ -4,7 +4,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^7.1",
-        "christopher-paul-shaw/datacache": "dev-master"
+        "christopher-paul-shaw/datacache": "0.0.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.3"
