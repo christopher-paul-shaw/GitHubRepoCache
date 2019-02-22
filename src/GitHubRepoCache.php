@@ -4,9 +4,9 @@ namespace CPS;
 class GitHubRepoCache {
 	public $username;
 
-	public function __construct ($username, $timeout=86400) {
+	public function __construct ($username, $path = './', $timeout=86400) {
 		$this->username = $username;
-		$this->cache = new DataCache('github-repos','./data/',$timeout);
+		$this->cache = new DataCache('github-repos', $path, $timeout);
 	}
 
 	public function getReposFromSource () {
