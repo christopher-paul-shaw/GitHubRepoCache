@@ -17,9 +17,9 @@ class GitHubRepoCache {
 			CURLOPT_RETURNTRANSFER => true,
 		];
 
-		$ch = curl_init( $url );
-		curl_setopt_array( $ch, $options );
-		$result = curl_exec( $ch );
+		$ch = \curl_init( $url );
+		\curl_setopt_array( $ch, $options );
+		$result = \curl_exec( $ch );
 
 		$repos = [];
 
@@ -44,9 +44,9 @@ class GitHubRepoCache {
 			CURLOPT_RETURNTRANSFER => true,
 		];
 
-		$ch = curl_init( $url );
-		curl_setopt_array( $ch, $options );
-		return curl_exec( $ch );
+		$ch = \curl_init( $url );
+		\curl_setopt_array( $ch, $options );
+		return \curl_exec( $ch );
 	}
 
 	public function getRepos () {
